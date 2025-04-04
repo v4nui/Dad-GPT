@@ -106,7 +106,7 @@ The app will:
 ```
 ├── app.py # Streamlit app for generating dad jokes
 ├── collect_dadjokes.py # Reddit PRAW data collector
-├── eda.py # EDA and RAG preparation script
+├── EDA.ipynb # EDA and RAG preparation script
 ├── vector.py # Vector database setup
 ├── main.py # Terminal app
 ├── dad-gpt_icon.png # Logo
