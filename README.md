@@ -58,7 +58,6 @@ Create a .env file in the project root with your API credentials:
 GIPHY_API_KEY=your_giphy_api_key_here
 REDDIT_CLIENT_ID=your_reddit_client_id_here
 REDDIT_CLIENT_SECRET=your_reddit_client_secret_here
-REDDIT_USER_AGENT=your_reddit_user_agent_here
 ```
 
 ## 🚀 Usage
@@ -104,18 +103,24 @@ The app will:
 ## 📁 Project Structure
 
 ```
-├── app.py # Streamlit app for generating dad jokes
-├── collect_dadjokes.py # Reddit PRAW data collector
-├── EDA.ipynb # EDA and RAG preparation script
-├── vector.py # Vector database setup
-├── main.py # Terminal app
-├── dad-gpt_icon.png # Logo
-├── requirements.txt # Dependencies
-├── cleaned_dadjokes.csv # Cleaned data
-├── load_jokes.py # Script to collect top joke from reddit
-├── data # Folder with csvs
-├── .env # Environment variables (API keys)
-└── README.md # This file
+.
+├── app.py                     # Streamlit app for generating dad jokes
+├── collect_dadjokes.py        # Reddit PRAW data collector
+├── EDA.ipynb                  # EDA and RAG preparation script
+├── vector.py                  # Vector database setup
+├── chroma_langchain_db        # Vector database
+├── chatbot-venv               # My virtual environment
+├── data/                      # Data folder
+│   ├── cleaned_dadjokes.csv   # Cleaned dad jokes CSV file
+│   └── dadjokes_partial.csv   # Row data jokes CSV file
+├── main.py                    # Terminal app
+├── dad-gpt_icon.png           # Logo
+├── requirements.txt           # Dependencies
+├── load_jokes.py              # Script to collect top joke from Reddit
+├── dadjokes_partial_data.csv  # Raw pulled data
+├── .env                       # Environment variables (API keys)
+└── README.md                  # Project documentation (this file)
+
 ```
 
 ## 🤝 Contributing

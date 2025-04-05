@@ -5,7 +5,10 @@ import os
 import pandas as pd
 
 
-df = pd.read_csv("cleaned_dadjokes.csv")
+script_dir = os.path.dirname(os.path.abspath(__file__))
+csv_path = os.path.join(script_dir, "data", "cleaned_dadjokes.csv")
+
+df = pd.read_csv(csv_path)
 embeddings = OllamaEmbeddings(model="mxbai-embed-large")
 
 db_location = "./chroma_langchain_db"
